@@ -11,7 +11,7 @@ body{
 
 .navbar-brand img{
     width: 5%;
-    vertical-align: middle;
+    
 }
 
 .navbar-brand p{
@@ -30,4 +30,12 @@ i{
 .card-body{
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+h5{
+    font-size: 18px;
+}
+
+.destacado {
+    font-size: 15px;
 }

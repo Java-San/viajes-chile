@@ -27,39 +27,38 @@
 <body>
     <section class="conatiner-fluid">
         <!-- nav bar -->
-        <nav class="container navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/img/viajes.svg" alt="Logo" class="d-inline">
+        <nav class="container-fluid navbar fixed-top navbar-expand-lg navbar-dark bg-transparent px-5">
+            <a class="navbar-brand" href="#">
+                <!-- nose porque ocurre esto, pero con el svg el navbar toggler queda abajo, cuando es un png esto no ocurre, lo voy a dejar asi-->
+                <img src="./assets/img/viajes.svg" alt="Logo" class="pr-2">
 
-                    <p class="d-inline text-capitalize"> viajes chile </p>
-                </a>
+                Viajes Chile
+            </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
 
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item pr-2">
+                        <a class="nav-link active" aria-current="page" href="#"> Inicio </a>
+                    </li>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item pr-2">
-                            <a class="nav-link active" aria-current="page" href="#"> Inicio </a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#quienes"> quiénes somos </a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-capitalize" href="#quienes"> quiénes somos </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link text-capitalize" href="#destacados"> destacados </a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#destacados"> destacados </a>
+                    </li>
 
 
-                        <li class="nav-item">
-                            <a class="nav-link text-capitalize" href="#contacto"> contacto </a>
-                        </li>
-                    </ul>
-                </div>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#contacto"> contacto </a>
+                    </li>
+                </ul>
             </div>
         </nav>
 
@@ -89,13 +88,13 @@
     </section>
     
     
-    <!-- TODO: section: quienes somos -->
-    <section class="container my-5">
+    <!-- section: quienes somos -->
+    <section class="container-fluid my-5 d-none d-md-block">
         <h3 class="text-center text-white my-4"> ¿Quiénes somos? </h3>
 
         <hr class="border border-info my-4">
 
-        <div class="card-group my-5">
+        <div class="container card-group my-5">
             <div class="card">
                 <div class="card-header bg-info text-center">
                     <i class="fas fa-plane text-white"></i>
@@ -137,7 +136,63 @@
         </div>
     </section>
     
-    <!-- TODO: section: destacados -->
+    <!-- section: destacados -->
+    <section class="container-fluid my-5 py-5">
+        <h3 class="text-center text-white my-4"> Destacados </h3>
+
+        <hr class="border border-info my-4">
+
+        <div class="row row-cols-1 row-cols-md-4 py-2 mx-5 text-center">
+            <div class="col mb-4">
+                <div class="card h-100 border border-secondary rounded-lg">
+                    <img src="./assets/img/card1.jpg" class="card-img-top" alt="Mar">
+
+                    <div class="card-body text-left text-white bg-info">
+                        <h5 class="card-title font-weight-bold py-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit </h5>
+                        
+                        <p class="destacado card-text"> Fuga, delectus dicta cupiditate quisquam voluptas quasi voluptatem labore praesentium vero temporibus obcaecati porro accusantium officia, blanditiis aspernatur itaque quos officiis deserunt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-4">
+                <div class="card h-100 border border-secondary rounded-lg">
+                    <img src="./assets/img/card2.jpg" class="card-img-top" alt="Lago">
+                    
+                    <div class="card-body text-left text-white bg-info">
+                        <h5 class="card-title font-weight-bold py-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit </h5>
+                        
+                        <p class="destacado card-text"> Officia placeat impedit illo velit tempore reiciendis eveniet ipsam voluptatum? Consectetur vel, sint repudiandae sapiente obcaecati quisquam amet eum rem ullam doloremque </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-4">
+                <div class="card h-100 border border-secondary rounded-lg">
+                    <img src="./assets/img/card3.jpg" class="card-img-top" alt="Desierto">
+                    
+                    <div class="card-body text-left text-white bg-info">
+                        <h5 class="card-title font-weight-bold py-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
+                        
+                        <p class="destacado card-text"> Quos dolorem, animi nostrum nihil qui est harum architecto nam iure. Illo exercitationem numquam obcaecati, corrupti est ducimus eum. Distinctio, nulla harum. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-4">
+                <div class="card h-100 border border-secondary rounded-lg">
+                    <img src="./assets/img/card4.jpg" class="card-img-top" alt="Selva">
+                    
+                    <div class="card-body text-left text-white bg-info">
+                        <h5 class="card-title font-weight-bold py-3"> Lorem ipsum, dolor sit amet consectetur adipisicing elit </h5>
+                        
+                        <p class="destacado card-text">  Consequatur culpa quod placeat tempore? Porro officiis rem quas? Omnis distinctio vero iure ex, provident suscipit, odit beatae nostrum soluta officia quae.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- TODO: section: contacto -->
 
     <section class="container">
@@ -166,4 +221,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SCRIPT -->
+    <script src="./assets/js/script.js"></script>
 </body>
