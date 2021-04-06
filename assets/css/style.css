@@ -8,3 +8,12 @@ body{
     font-family: 'Open Sans', sans-serif;
     
 }
+
+.navbar-brand img{
+    width: 5%;
+    vertical-align: middle;
+}
+
+.navbar-brand p{
+    font-weight: 600;
+}
