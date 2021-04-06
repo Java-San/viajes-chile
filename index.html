@@ -26,21 +26,20 @@
 </head>
 <body>
     <section class="conatiner-fluid">
-        <!-- nav bar -->
+        <!-- PRIMER COMPONENTE DE BOOTSTRAP: nav bar -->
         <nav class="container-fluid navbar fixed-top navbar-expand-lg navbar-dark bg-transparent px-5">
             <a class="navbar-brand" href="#">
-                <!-- nose porque ocurre esto, pero con el svg el navbar toggler queda abajo, cuando es un png esto no ocurre, lo voy a dejar asi-->
+                <!-- nose porque ocurre esto, pero con el svg el navbar toggler queda abajo, cuando es un png esto no ocurre, lo voy a dejar asi -->
                 <img src="./assets/img/viajes.svg" alt="Logo" class="pr-2">
 
                 Viajes Chile
             </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
-
-            <div class="collapse navbar-collapse" id="navbarNav">
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item pr-2">
                         <a class="nav-link active" aria-current="page" href="#"> Inicio </a>
@@ -62,7 +61,7 @@
             </div>
         </nav>
 
-        <!-- sliders o carousel -->
+        <!-- SEGUNDO COMPONENTE DE BOOTSTRAP: sliders o carousel -->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -94,9 +93,10 @@
 
         <hr class="border border-info my-4">
 
+        <!-- TERCER COMPONENTE BOOTSTRAP: card-group -->
         <div class="container card-group my-5">
             <div class="card">
-                <div class="card-header bg-info text-center">
+                <div class="card-header bg-info text-center" data-toggle="tooltip" data-placement="right" title="¡Viaja con nosotros!">
                     <i class="fas fa-plane text-white"></i>
                 </div>
 
@@ -116,13 +116,13 @@
                     </p>
                 </div>
 
-                <div class="card-footer bg-info text-center">
+                <div class="card-footer bg-info text-center" data-toggle="tooltip" data-placement="top" title="¡Conoce paisajes nuevos!">
                     <i class="fas fa-mountain text-white"></i>
                 </div>
             </div>
 
             <div class="card">
-                <div class="card-header bg-info text-center">
+                <div class="card-header bg-info text-center" data-toggle="tooltip" data-placement="left" title="¡Recorre el lugar!">
                     <i class="fas fa-route text-white"></i>
                 </div>
 
@@ -144,10 +144,10 @@
 
         <div class="row row-cols-1 row-cols-md-4 py-2 mx-5 text-center">
             <div class="col mb-4">
-                <div class="card h-100 border border-secondary rounded-lg">
+                <div id="card1" class="card h-100 border border-secondary rounded-lg" data-toggle="popover" data-placement="right" title="Te gusta la montaña?" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit">
                     <img src="./assets/img/card1.jpg" class="card-img-top" alt="Mar">
 
-                    <div class="card-body text-left text-white bg-info">
+                    <div class="card-body text-left text-white bg-info py-3">
                         <h5 class="card-title font-weight-bold py-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit </h5>
                         
                         <p class="destacado card-text"> Fuga, delectus dicta cupiditate quisquam voluptas quasi voluptatem labore praesentium vero temporibus obcaecati porro accusantium officia, blanditiis aspernatur itaque quos officiis deserunt.</p>
@@ -156,10 +156,10 @@
             </div>
 
             <div class="col mb-4">
-                <div class="card h-100 border border-secondary rounded-lg">
+                <div id="card2" class="card h-100 border border-secondary rounded-lg" data-toggle="popover" data-placement="right" title="Te gustan los lagos?" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit">
                     <img src="./assets/img/card2.jpg" class="card-img-top" alt="Lago">
                     
-                    <div class="card-body text-left text-white bg-info">
+                    <div class="card-body text-left text-white bg-info py-3">
                         <h5 class="card-title font-weight-bold py-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit </h5>
                         
                         <p class="destacado card-text"> Officia placeat impedit illo velit tempore reiciendis eveniet ipsam voluptatum? Consectetur vel, sint repudiandae sapiente obcaecati quisquam amet eum rem ullam doloremque </p>
@@ -168,10 +168,10 @@
             </div>
 
             <div class="col mb-4">
-                <div class="card h-100 border border-secondary rounded-lg">
+                <div id="card3" class="card h-100 border border-secondary rounded-lg" data-toggle="popover" data-placement="left" title="Te gusta el desierto?" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit">
                     <img src="./assets/img/card3.jpg" class="card-img-top" alt="Desierto">
                     
-                    <div class="card-body text-left text-white bg-info">
+                    <div class="card-body text-left text-white bg-info py-3">
                         <h5 class="card-title font-weight-bold py-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
                         
                         <p class="destacado card-text"> Quos dolorem, animi nostrum nihil qui est harum architecto nam iure. Illo exercitationem numquam obcaecati, corrupti est ducimus eum. Distinctio, nulla harum. </p>
@@ -180,10 +180,10 @@
             </div>
 
             <div class="col mb-4">
-                <div class="card h-100 border border-secondary rounded-lg">
+                <div id="card4" class="card h-100 border border-secondary rounded-lg" data-toggle="popover" data-placement="left" title="Te gusta la selva?" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit">
                     <img src="./assets/img/card4.jpg" class="card-img-top" alt="Selva">
                     
-                    <div class="card-body text-left text-white bg-info">
+                    <div class="card-body text-left text-white bg-info py-3">
                         <h5 class="card-title font-weight-bold py-3"> Lorem ipsum, dolor sit amet consectetur adipisicing elit </h5>
                         
                         <p class="destacado card-text">  Consequatur culpa quod placeat tempore? Porro officiis rem quas? Omnis distinctio vero iure ex, provident suscipit, odit beatae nostrum soluta officia quae.</p>
@@ -193,13 +193,32 @@
         </div>
     </section>
     
-    <!-- TODO: section: contacto -->
+    <!-- section: contacto -->
     <section id="contacto" class="container-fluid mb-4">
         <h3 class="text-center text-white my-3"> Contacto </h3>
 
         <hr class="border border-info my-4">
 
-        <div class="container typeform-widget" data-url="https://form.typeform.com/to/G5zYTudN?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+        <!-- FORMULARIO TYPEFORM -->
+        <div class="container typeform-widget" 
+            data-url="https://form.typeform.com/to/G5zYTudN?typeform-medium=embed-snippet" 
+            style="width: 100%; height: 500px;">
+        </div> 
+        
+        <script> 
+            (function() { 
+                var qs,js,q,s,d = document, gi = d.getElementById, ce = d.createElement, 
+                gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; 
+                
+                if( !gi.call( d, id ) ) { 
+                    js = ce.call( d, "script" ); 
+                    js.id = id; 
+                    js.src = b + "embed.js"; 
+                    q = gt.call( d, "script" )[0]; 
+                    q.parentNode.insertBefore( js,q ) 
+                } 
+            })() 
+        </script>
     </section>
 
     <!-- TODO: footer: a redes sociales -->

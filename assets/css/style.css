@@ -43,3 +43,24 @@ h5{
 footer i{
     font-size: 35px;
 }
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.tooltip-inner {
+    background-color: #00acd6 !important;
+    font-size: 20px;
+}
+
+.popover-header {
+    background-color: #00acd6 !important;
+    font-size: 1.5em;
+    color: white;
+}
+
+.popover-body{
+    background-color: #00acd6 !important;
+    color: white;
+}
