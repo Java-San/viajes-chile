@@ -89,7 +89,7 @@
     
     
     <!-- section: quienes somos -->
-    <section class="container-fluid my-5 d-none d-md-block">
+    <section id="quienes" class="container-fluid my-5 d-none d-md-block">
         <h3 class="text-center text-white my-4"> ¿Quiénes somos? </h3>
 
         <hr class="border border-info my-4">
@@ -137,7 +137,7 @@
     </section>
     
     <!-- section: destacados -->
-    <section class="container-fluid my-5 py-5">
+    <section id="destacados" class="container-fluid my-5 py-5">
         <h3 class="text-center text-white my-4"> Destacados </h3>
 
         <hr class="border border-info my-4">
@@ -194,27 +194,40 @@
     </section>
     
     <!-- TODO: section: contacto -->
+    <section id="contacto" class="container-fluid mb-4">
+        <h3 class="text-center text-white my-3"> Contacto </h3>
 
-    <section class="container">
-        
-    </section>
-        <div class="typeform-widget" data-url="https://form.typeform.com/to/G5zYTudN?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+        <hr class="border border-info my-4">
+
+        <div class="container typeform-widget" data-url="https://form.typeform.com/to/G5zYTudN?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
     </section>
 
     <!-- TODO: footer: a redes sociales -->
-    <footer class="bg-info">
-        <h3> viajes chile </h3>
-        <!-- git -->
-        <i class="fab fa-github-square"></i>
+    <footer class="bg-info mb-0">
+        <div class="container row mx-auto py-2">
+            <div class="col-12 col-md-6">
+                <h1 class="text-white text-center text-uppercase"> viajes chile </h1>
+            </div>
 
-        <!-- linkedin -->
-        <i class="fab fa-linkedin"></i>
+            <div class="col-12 col-md-6 text-center py-2">
+                <a class="px-3" href="https://www.github.com" target="_blank">
+                    <i class="fab fa-github-square text-white"></i>
+                </a>
 
-        <!-- twitter -->
-        <i class="fab fa-twitter-square"></i>
+                <a class="px-3" href="https://www.linkedin.com/home" target="_blank">
+                    <i class="fab fa-linkedin text-white"></i>
+                </a>
 
-        <!-- facebook -->
-        <i class="fab fa-facebook-square"></i>
+                <a class="px-3" href="https://twitter.com/?lang=es" target="_blank">
+                    <i class="fab fa-twitter-square text-white"></i>
+                </a>
+
+                <a class="px-3" href="https://es-la.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-square text-white"></i>
+                </a>
+
+            </div>
+        </div>
     </footer>
 
     <!-- jQUERY -->
